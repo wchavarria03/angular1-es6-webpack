@@ -1,0 +1,53 @@
+.loginBox {
+  background: $white;
+  width: 35%;
+  margin: auto;
+  padding: 45px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  .loginBox {
+    background: $white;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+
+  .paddingTop_md {
+    padding-top: 25%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .loginBox {
+    background: $white;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+
+  .paddingTop_md {
+    padding-top: 15%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .loginBox {
+    background: $white;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+
+  .paddingTop_md {
+    padding-top: 10%;
+  }
+}

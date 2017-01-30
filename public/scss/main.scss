@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@import
+  //base
+'base/_variables',
+
+  //component
+'component/_navbar',
+'component/_button',
+'component/_input',
+
+  //feature
+'features/_login';
+
+.pullRight {
+  text-align: right;
+}
+
+html, body, #views {
+  height: 100%;
+}
+
+.fullHeightScreen {
+  height: 100%;
+}
+
+.principalBackgroundColor {
+  background-color: $color2;
+}
+
+.secondaryBackgroundColor {
+  background: $white;
+}
+
+.principalTxtColor {
+  color: $color3;
+}
+
+.center {
+  text-align: center;
+}
+
+.paddingTop_md {
+  padding-top: 10%;
+}
+
+.title_lg {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.error {
+  color: $red;
+}
+
+.containerWithoutPadding {
+  padding: 0;
+}
+
+.marginTop-sm {
+  margin-top: 20px;
+}
+
+.marginBottom-sm {
+  margin-bottom: 20px;
+}

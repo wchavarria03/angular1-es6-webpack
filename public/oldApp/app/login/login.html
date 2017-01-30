@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="paddingTop_md">
+    <div class="loginBox">
+      <div class="center">
+        <img src="./img/logo.png" class="logo" alt="GymApp"/>
+      </div>
+      <div id="info-area">
+        <form name="loginForm" novalidate>
+          <input id="name" type="text" class="primaryInput" placeholder="Username" ng-model="login.credentials.usernameOrEmailAddress" required/>
+  	      <input id="password" type="password" class="primaryInput" placeholder="Password" ng-model="login.credentials.password" required/>
+          <div class="checkbox">
+            <label>
+              <input id="rememberMe" type="checkbox" ng-model="login.rememberMe"/> Remember Me?
+            </label>
+          </div>
+          <p ng-if="login.error" class="error">{{login.errorMsg}}</p>
+  		    <button type="submit" ng-click="login.login(login.user.username,login.user.password)" ng-disabled="loginForm.$invalid" class="primaryButton default" ng-class="{'disabled':loginForm.$invalid}">Login</button>
+  	    </form>
+      </div>
+    </div>
+  </div>
+</div>

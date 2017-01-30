@@ -1,0 +1,17 @@
+.primaryInput {
+  background: $color4;
+  width: 100%;
+  border: 0;
+  margin: 0 0 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.has-error {
+  border: 1px solid red;
+}
+
+.form-control {
+  border-radius: 0;
+}
