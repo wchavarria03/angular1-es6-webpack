@@ -10,17 +10,9 @@ export default function routing($stateProvider, $urlRouterProvider) {
       controllerAs: 'login',
       showInMenu: false
     })
-    /*.state('chooseGym', {
-      url: '/chooseGym',
-      templateUrl: 'app/chooseGym/chooseGym.html',
-      controller: 'chooseGymController',
-      controllerAs: 'chooseGym',
-      params: {gyms: null},
-      showInMenu: false
-    })
     .state('app', {
       url: '/app',
-      templateUrl: 'app/menu/menu.html',
+      template: require('../menu/menu.html'),
       controller: 'menuController',
       controllerAs: 'menu',
       abstract: true,
@@ -28,11 +20,19 @@ export default function routing($stateProvider, $urlRouterProvider) {
     })
     .state('app.dashboard', {
       url: '/dashboard',
-      templateUrl: 'app/dashboard/dashboard.html',
+      template: require('../dashboard/dashboard.html'),
       controller: 'dashboardController',
       controllerAs: 'dashboard',
       menu: 'Dashboard',
       showInMenu: true
+    })
+    /*.state('chooseGym', {
+      url: '/chooseGym',
+      templateUrl: 'app/chooseGym/chooseGym.html',
+      controller: 'chooseGymController',
+      controllerAs: 'chooseGym',
+      params: {gyms: null},
+      showInMenu: false
     })
     .state('app.clients', {
       url: '/clients',

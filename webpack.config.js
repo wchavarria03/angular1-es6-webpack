@@ -34,13 +34,15 @@ module.exports = function makeWebpackConfig() {
         exclude: [/node_modules/]
       },
       {
-        test: /\.css$/,
+        test: /\.(scss|css)$/,
         loader: ExtractTextPlugin.extract({
           fallbackLoader: 'style-loader',
-          loader: [
-            {loader: 'css-loader', query: {sourceMap: true}},
-            {loader: 'postcss-loader'}
-          ]
+          loader: 'css-loader!sass-loader!postcss-loader'
+          // loader: [
+          //   {loader: 'css-loader', query: {sourceMap: true}},
+          //   {loader: 'sass-loader'},
+          //   {loader: 'postcss-loader'}
+          // ]
         })
       },
       {
@@ -59,9 +61,14 @@ module.exports = function makeWebpackConfig() {
       options: {
         postcss: {
           plugins: [autoprefixer]
-        }
+        },
+        sassLoader: {
+          includePaths: [path.resolve(__dirname, 'app')]
+        },
+        context: '/'
       }
     }),
+    new ExtractTextPlugin( "bundle.css" ),
 
     new HtmlWebpackPlugin({
       filename: 'index.html',
@@ -73,7 +80,7 @@ module.exports = function makeWebpackConfig() {
 
     new CopyWebpackPlugin([{
       from: path.resolve(__dirname, './public/img'),
-      to: 'imgs'
+      to: 'img'
     }])
   ];
 

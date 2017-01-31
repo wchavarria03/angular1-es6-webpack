@@ -1,14 +1,13 @@
-(function () {
-  'use strict';
-  angular.module('app')
-    .controller('dashboardController', [
-      '$state',
-      Dashboard]);
-
-  function Dashboard($state) {
-    var vm = this;
-    vm.goToMembers = function goToMembers() {
-      $state.go('members');
-    };
+class DashboardController {
+  constructor($state) {
+    this.$state = $state;
   }
-})();
+
+  goToMembers () {
+    console.log('In progress...');
+    //this.$state.go('members');
+  }
+}
+DashboardController.$inject = ['$state'];
+
+export default DashboardController;
