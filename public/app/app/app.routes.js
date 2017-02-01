@@ -26,14 +26,14 @@ export default function routing($stateProvider, $urlRouterProvider) {
       menu: 'Dashboard',
       showInMenu: true
     })
-    /*.state('chooseGym', {
+    .state('chooseGym', {
       url: '/chooseGym',
-      templateUrl: 'app/chooseGym/chooseGym.html',
+      template: require('../chooseGym/chooseGym.html'),
       controller: 'chooseGymController',
       controllerAs: 'chooseGym',
       params: {gyms: null},
       showInMenu: false
-    })
+    })/*
     .state('app.clients', {
       url: '/clients',
       templateUrl: 'app/users/clients/clients.html',

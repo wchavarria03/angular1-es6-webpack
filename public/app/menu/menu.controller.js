@@ -24,8 +24,8 @@ class MenuController {
   }
 
   activate() {
-    $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
-      vm.currentMenuName = toState.menu;
+    this.$rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
+      this.currentMenuName = toState.menu;
     });
     this.states = this.getStateList();
   }

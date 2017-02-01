@@ -2,7 +2,7 @@
   'use strict';
   angular.module('app')
     .component('chooseGymModalComponent', {
-      templateUrl: 'app/shared/chooseGymModal/chooseGymModal.html',
+      templateUrl: 'app/shared/chooseGymModalOLD/chooseGymModalOLD.html',
       bindings: {
         resolve: '<',
         close: '&',

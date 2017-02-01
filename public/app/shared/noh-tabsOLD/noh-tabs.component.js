@@ -1,9 +1,11 @@
+
+
 (function() {
   'use strict';
   angular.module('app')
     .component('nohTabs', {
       controller: 'nohTabsController',
-      templateUrl: 'app/shared/noh-tabs/noh-tabs.html',
+      templateUrl: 'app/shared/noh-tabsOLD/noh-tabsOLD.html',
       transclude: true
     })
     .controller('nohTabsController', [
