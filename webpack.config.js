@@ -56,6 +56,11 @@ module.exports = function makeWebpackConfig() {
   };
 
   config.plugins =  [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+    }),
+
     new webpack.LoaderOptionsPlugin({
       test: /\.scss$/i,
       options: {

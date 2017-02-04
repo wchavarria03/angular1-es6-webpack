@@ -36,7 +36,7 @@ export default function routing($stateProvider, $urlRouterProvider) {
     })/*
     .state('app.clients', {
       url: '/clients',
-      templateUrl: 'app/users/clients/clients.html',
+      templateUrl: 'app/usersOLD/clients/clients.html',
       controller: 'clientsController',
       controllerAs: 'clients',
       menu: 'Clients',
@@ -44,7 +44,7 @@ export default function routing($stateProvider, $urlRouterProvider) {
     })
     .state('app.employees', {
       url: '/employees',
-      templateUrl: 'app/users/employees/employees.html',
+      templateUrl: 'app/usersOLD/employees/employees.html',
       controller: 'employeesController',
       controllerAs: 'employees',
       menu: 'Employees',
@@ -52,7 +52,7 @@ export default function routing($stateProvider, $urlRouterProvider) {
     })
     .state('app.userClient', {
       url: '/client/:id',
-      templateUrl: 'app/users/user/user.html',
+      templateUrl: 'app/usersOLD/user/user.html',
       controller: 'userController',
       controllerAs: 'user',
       menu: 'Clients',
@@ -60,18 +60,13 @@ export default function routing($stateProvider, $urlRouterProvider) {
     })
     .state('app.userEmployee', {
       url: '/employee/:id',
-      templateUrl: 'app/users/user/user.html',
+      templateUrl: 'app/usersOLD/user/user.html',
       controller: 'userController',
       controllerAs: 'user',
       menu: 'Employees',
       showInMenu: false
     })
-  /*.state('programs', {
-   url: '/programs/:userId',
-   templateUrl: 'app/programs/programs.html',
-   controller: 'programsController',
-   controllerAs: 'programs'
-   })
+  /*
    .state('user', {
    url: '/user/:id',
    templateUrl: 'app/user/user.html',
